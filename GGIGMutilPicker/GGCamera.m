@@ -9,7 +9,7 @@
 #import "GGCamera.h"
 #import "AGImagePickerController.h"
 
-#import "AGAppDelegate.h"
+#import "AppDelegate.h"
 #import <objc/runtime.h>
 
 
@@ -139,7 +139,7 @@ static const char GGCameraDidFinishPickerImageUrl;
         // imagePickerController.allowsEditing = YES;
         imagePickerController.sourceType = sourceType;
         
-        AGAppDelegate *appdelegate = (AGAppDelegate *)[[UIApplication sharedApplication] delegate];
+        AppDelegate *appdelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
         UIViewController *rootViewController = [[appdelegate window] rootViewController];
         [rootViewController presentViewController:imagePickerController animated:YES completion:^{}];
     }
@@ -225,7 +225,7 @@ static const char GGCameraDidFinishPickerImageUrl;
 
 #pragma mark - AGImagePickerControllerDelegate
 - (void)configureAGPicker{
-    AGAppDelegate *appdelegate = (AGAppDelegate *)[[UIApplication sharedApplication] delegate];
+    AppDelegate *appdelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     UIViewController *rootViewController = [[appdelegate window] rootViewController];
     
     __weak __typeof(&*self)fuckSelf = self;
@@ -236,14 +236,14 @@ static const char GGCameraDidFinishPickerImageUrl;
         
         if (error == nil) {
             NSLog(@"User has cancelled.");
-            [rootViewController dismissModalViewControllerAnimated:YES];
+            [rootViewController dismissViewControllerAnimated:YES completion:nil];
         } else {
             
             // We need to wait for the view controller to appear first.
             double delayInSeconds = 0.5;
             dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
             dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-                [rootViewController dismissModalViewControllerAnimated:YES];
+                [rootViewController dismissViewControllerAnimated:YES completion:nil];
             });
         }
         
@@ -262,7 +262,7 @@ static const char GGCameraDidFinishPickerImageUrl;
         void (^block)(NSArray *imgs) = objc_getAssociatedObject(fuckSelf, &GGCameraDidFinishPickerImage);
         if (block) block(images);
 
-        [rootViewController dismissModalViewControllerAnimated:YES];
+        [rootViewController dismissViewControllerAnimated:YES completion:nil];
         
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:YES];
     };
@@ -285,7 +285,7 @@ static const char GGCameraDidFinishPickerImageUrl;
     //    }];
     //    ipc.toolbarItemsForManagingTheSelection = @[selectAll, flexible, selectOdd, flexible, deselectAll];
     
-    [rootViewController presentModalViewController:ipc animated:YES];
+    [rootViewController presentViewController:ipc animated:YES completion:nil];
     
     // Show first assets list, modified by springox(20140503)
     [ipc showFirstAssetsController];

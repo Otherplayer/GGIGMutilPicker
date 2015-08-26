@@ -14,6 +14,20 @@
 		63FDD6581B8D5DBD0011545F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63FDD6571B8D5DBD0011545F /* Images.xcassets */; };
 		63FDD65B1B8D5DBD0011545F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63FDD6591B8D5DBD0011545F /* LaunchScreen.xib */; };
 		63FDD6671B8D5DBD0011545F /* GGIGMutilPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FDD6661B8D5DBD0011545F /* GGIGMutilPickerTests.m */; };
+		63FDD6721B8D5DD00011545F /* GGCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FDD6711B8D5DD00011545F /* GGCamera.m */; };
+		63FDD68F1B8D5E030011545F /* AGImagePickerController+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FDD6761B8D5E030011545F /* AGImagePickerController+Helper.m */; };
+		63FDD6901B8D5E030011545F /* AGImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 63FDD6771B8D5E030011545F /* AGImagePickerController.bundle */; };
+		63FDD6911B8D5E030011545F /* AGImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FDD6791B8D5E030011545F /* AGImagePickerController.m */; };
+		63FDD6921B8D5E030011545F /* AGImagePreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FDD67C1B8D5E030011545F /* AGImagePreviewController.m */; };
+		63FDD6931B8D5E030011545F /* AGIPCAlbumsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FDD67E1B8D5E030011545F /* AGIPCAlbumsController.m */; };
+		63FDD6941B8D5E030011545F /* AGIPCAssetsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FDD6801B8D5E030011545F /* AGIPCAssetsController.m */; };
+		63FDD6951B8D5E030011545F /* AGIPCGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FDD6821B8D5E030011545F /* AGIPCGridCell.m */; };
+		63FDD6961B8D5E030011545F /* AGIPCGridItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FDD6841B8D5E030011545F /* AGIPCGridItem.m */; };
+		63FDD6971B8D5E030011545F /* AGIPCPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FDD6861B8D5E030011545F /* AGIPCPreviewController.m */; };
+		63FDD6981B8D5E030011545F /* AGIPCToolbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FDD6881B8D5E030011545F /* AGIPCToolbarItem.m */; };
+		63FDD6991B8D5E030011545F /* AGPreviewScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FDD68A1B8D5E030011545F /* AGPreviewScrollView.m */; };
+		63FDD69A1B8D5E030011545F /* ALAsset+AGIPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FDD68C1B8D5E030011545F /* ALAsset+AGIPC.m */; };
+		63FDD69B1B8D5E030011545F /* UIButton+AGIPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FDD68E1B8D5E030011545F /* UIButton+AGIPC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +54,35 @@
 		63FDD6601B8D5DBD0011545F /* GGIGMutilPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GGIGMutilPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63FDD6651B8D5DBD0011545F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63FDD6661B8D5DBD0011545F /* GGIGMutilPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGIGMutilPickerTests.m; sourceTree = "<group>"; };
+		63FDD6701B8D5DD00011545F /* GGCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGCamera.h; sourceTree = "<group>"; };
+		63FDD6711B8D5DD00011545F /* GGCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGCamera.m; sourceTree = "<group>"; };
+		63FDD6751B8D5E030011545F /* AGImagePickerController+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AGImagePickerController+Helper.h"; sourceTree = "<group>"; };
+		63FDD6761B8D5E030011545F /* AGImagePickerController+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AGImagePickerController+Helper.m"; sourceTree = "<group>"; };
+		63FDD6771B8D5E030011545F /* AGImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AGImagePickerController.bundle; sourceTree = "<group>"; };
+		63FDD6781B8D5E030011545F /* AGImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGImagePickerController.h; sourceTree = "<group>"; };
+		63FDD6791B8D5E030011545F /* AGImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGImagePickerController.m; sourceTree = "<group>"; };
+		63FDD67A1B8D5E030011545F /* AGImagePickerControllerDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGImagePickerControllerDefines.h; sourceTree = "<group>"; };
+		63FDD67B1B8D5E030011545F /* AGImagePreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGImagePreviewController.h; sourceTree = "<group>"; };
+		63FDD67C1B8D5E030011545F /* AGImagePreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGImagePreviewController.m; sourceTree = "<group>"; };
+		63FDD67D1B8D5E030011545F /* AGIPCAlbumsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGIPCAlbumsController.h; sourceTree = "<group>"; };
+		63FDD67E1B8D5E030011545F /* AGIPCAlbumsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGIPCAlbumsController.m; sourceTree = "<group>"; };
+		63FDD67F1B8D5E030011545F /* AGIPCAssetsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGIPCAssetsController.h; sourceTree = "<group>"; };
+		63FDD6801B8D5E030011545F /* AGIPCAssetsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGIPCAssetsController.m; sourceTree = "<group>"; };
+		63FDD6811B8D5E030011545F /* AGIPCGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGIPCGridCell.h; sourceTree = "<group>"; };
+		63FDD6821B8D5E030011545F /* AGIPCGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGIPCGridCell.m; sourceTree = "<group>"; };
+		63FDD6831B8D5E030011545F /* AGIPCGridItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGIPCGridItem.h; sourceTree = "<group>"; };
+		63FDD6841B8D5E030011545F /* AGIPCGridItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGIPCGridItem.m; sourceTree = "<group>"; };
+		63FDD6851B8D5E030011545F /* AGIPCPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGIPCPreviewController.h; sourceTree = "<group>"; };
+		63FDD6861B8D5E030011545F /* AGIPCPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGIPCPreviewController.m; sourceTree = "<group>"; };
+		63FDD6871B8D5E030011545F /* AGIPCToolbarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGIPCToolbarItem.h; sourceTree = "<group>"; };
+		63FDD6881B8D5E030011545F /* AGIPCToolbarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGIPCToolbarItem.m; sourceTree = "<group>"; };
+		63FDD6891B8D5E030011545F /* AGPreviewScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGPreviewScrollView.h; sourceTree = "<group>"; };
+		63FDD68A1B8D5E030011545F /* AGPreviewScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGPreviewScrollView.m; sourceTree = "<group>"; };
+		63FDD68B1B8D5E030011545F /* ALAsset+AGIPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAsset+AGIPC.h"; sourceTree = "<group>"; };
+		63FDD68C1B8D5E030011545F /* ALAsset+AGIPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAsset+AGIPC.m"; sourceTree = "<group>"; };
+		63FDD68D1B8D5E030011545F /* UIButton+AGIPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AGIPC.h"; sourceTree = "<group>"; };
+		63FDD68E1B8D5E030011545F /* UIButton+AGIPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AGIPC.m"; sourceTree = "<group>"; };
+		63FDD69C1B8D5E700011545F /* AGImagePickerController Demo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AGImagePickerController Demo-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +124,7 @@
 		63FDD6491B8D5DBD0011545F /* GGIGMutilPicker */ = {
 			isa = PBXGroup;
 			children = (
+				63FDD6731B8D5DD40011545F /* Camera */,
 				63FDD64E1B8D5DBD0011545F /* AppDelegate.h */,
 				63FDD64F1B8D5DBD0011545F /* AppDelegate.m */,
 				63FDD6511B8D5DBD0011545F /* ViewController.h */,
@@ -117,6 +161,50 @@
 				63FDD6651B8D5DBD0011545F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63FDD6731B8D5DD40011545F /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				63FDD69C1B8D5E700011545F /* AGImagePickerController Demo-Prefix.pch */,
+				63FDD6741B8D5E030011545F /* AGImagePickerController */,
+				63FDD6701B8D5DD00011545F /* GGCamera.h */,
+				63FDD6711B8D5DD00011545F /* GGCamera.m */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
+		63FDD6741B8D5E030011545F /* AGImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				63FDD6751B8D5E030011545F /* AGImagePickerController+Helper.h */,
+				63FDD6761B8D5E030011545F /* AGImagePickerController+Helper.m */,
+				63FDD6771B8D5E030011545F /* AGImagePickerController.bundle */,
+				63FDD6781B8D5E030011545F /* AGImagePickerController.h */,
+				63FDD6791B8D5E030011545F /* AGImagePickerController.m */,
+				63FDD67A1B8D5E030011545F /* AGImagePickerControllerDefines.h */,
+				63FDD67B1B8D5E030011545F /* AGImagePreviewController.h */,
+				63FDD67C1B8D5E030011545F /* AGImagePreviewController.m */,
+				63FDD67D1B8D5E030011545F /* AGIPCAlbumsController.h */,
+				63FDD67E1B8D5E030011545F /* AGIPCAlbumsController.m */,
+				63FDD67F1B8D5E030011545F /* AGIPCAssetsController.h */,
+				63FDD6801B8D5E030011545F /* AGIPCAssetsController.m */,
+				63FDD6811B8D5E030011545F /* AGIPCGridCell.h */,
+				63FDD6821B8D5E030011545F /* AGIPCGridCell.m */,
+				63FDD6831B8D5E030011545F /* AGIPCGridItem.h */,
+				63FDD6841B8D5E030011545F /* AGIPCGridItem.m */,
+				63FDD6851B8D5E030011545F /* AGIPCPreviewController.h */,
+				63FDD6861B8D5E030011545F /* AGIPCPreviewController.m */,
+				63FDD6871B8D5E030011545F /* AGIPCToolbarItem.h */,
+				63FDD6881B8D5E030011545F /* AGIPCToolbarItem.m */,
+				63FDD6891B8D5E030011545F /* AGPreviewScrollView.h */,
+				63FDD68A1B8D5E030011545F /* AGPreviewScrollView.m */,
+				63FDD68B1B8D5E030011545F /* ALAsset+AGIPC.h */,
+				63FDD68C1B8D5E030011545F /* ALAsset+AGIPC.m */,
+				63FDD68D1B8D5E030011545F /* UIButton+AGIPC.h */,
+				63FDD68E1B8D5E030011545F /* UIButton+AGIPC.m */,
+			);
+			path = AGImagePickerController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +290,7 @@
 				63FDD6561B8D5DBD0011545F /* Main.storyboard in Resources */,
 				63FDD65B1B8D5DBD0011545F /* LaunchScreen.xib in Resources */,
 				63FDD6581B8D5DBD0011545F /* Images.xcassets in Resources */,
+				63FDD6901B8D5E030011545F /* AGImagePickerController.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +308,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63FDD6941B8D5E030011545F /* AGIPCAssetsController.m in Sources */,
+				63FDD6981B8D5E030011545F /* AGIPCToolbarItem.m in Sources */,
+				63FDD6921B8D5E030011545F /* AGImagePreviewController.m in Sources */,
+				63FDD6951B8D5E030011545F /* AGIPCGridCell.m in Sources */,
+				63FDD69B1B8D5E030011545F /* UIButton+AGIPC.m in Sources */,
+				63FDD6721B8D5DD00011545F /* GGCamera.m in Sources */,
+				63FDD6961B8D5E030011545F /* AGIPCGridItem.m in Sources */,
+				63FDD6971B8D5E030011545F /* AGIPCPreviewController.m in Sources */,
+				63FDD69A1B8D5E030011545F /* ALAsset+AGIPC.m in Sources */,
 				63FDD6531B8D5DBD0011545F /* ViewController.m in Sources */,
 				63FDD6501B8D5DBD0011545F /* AppDelegate.m in Sources */,
 				63FDD64D1B8D5DBD0011545F /* main.m in Sources */,
+				63FDD6991B8D5E030011545F /* AGPreviewScrollView.m in Sources */,
+				63FDD68F1B8D5E030011545F /* AGImagePickerController+Helper.m in Sources */,
+				63FDD6931B8D5E030011545F /* AGIPCAlbumsController.m in Sources */,
+				63FDD6911B8D5E030011545F /* AGImagePickerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +451,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/Otherplayer/Desktop/GGIGMutilPicker/GGIGMutilPicker/AGImagePickerController Demo-Prefix.pch";
 				INFOPLIST_FILE = GGIGMutilPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -359,7 +465,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/Otherplayer/Desktop/GGIGMutilPicker/GGIGMutilPicker/AGImagePickerController Demo-Prefix.pch";
 				INFOPLIST_FILE = GGIGMutilPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
