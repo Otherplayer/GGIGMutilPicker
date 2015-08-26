@@ -69,11 +69,7 @@ static const char GGCameraDidFinishPickerImageUrl;
     BOOL photoLibraryAvailable = [self isPhotoLibraryAvailable];
     BOOL rearCameraAvailable = [self isRearCameraAvailable];
     
-    if (flag) {
-        self.isMutableSelected = YES;
-    }else{
-        self.isMutableSelected = NO;
-    }
+    self.isMutableSelected = !flag;
     
     [self.items removeAllObjects];
     
@@ -155,7 +151,7 @@ static const char GGCameraDidFinishPickerImageUrl;
     double delayInSeconds = 0.15;
     dispatch_time_t delayInNanoSeconds =dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
     // 得到全局队列
-    dispatch_queue_t concurrentQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_queue_t concurrentQueue = dispatch_get_main_queue();
     // 延期执行
     dispatch_after(delayInNanoSeconds, concurrentQueue, ^(void){
         if (self.isMutableSelected) {

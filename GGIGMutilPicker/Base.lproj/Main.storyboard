@@ -67,7 +67,9 @@
                             </constraint>
                             <constraint firstAttribute="centerX" secondItem="YGa-Bu-jaV" secondAttribute="centerX" id="fBu-Gn-0da"/>
                             <constraint firstItem="YGa-Bu-jaV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="fda-Dj-G4q"/>
-                            <constraint firstItem="YGa-Bu-jaV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-11" id="iCb-Fk-vhj"/>
+                            <constraint firstItem="YGa-Bu-jaV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-11" id="iCb-Fk-vhj">
+                                <variation key="widthClass=compact" constant="-4"/>
+                            </constraint>
                             <constraint firstItem="lVe-XE-eCb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="vB4-1V-SY1"/>
                         </constraints>
                         <variation key="default">
