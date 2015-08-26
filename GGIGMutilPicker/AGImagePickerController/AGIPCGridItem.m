@@ -155,8 +155,14 @@ static NSUInteger numberOfSelectedGridItems = 0;
         //[self addSubview:self.selectionView];
         
         //self.checkmarkImageView = [[UIImageView alloc] initWithFrame:checkmarkFrame];
-        self.checkmarkImageView = [[UIButton alloc] initWithFrame:checkmarkFrame];
         
+        UIView *bgCheckmarkView = [[UIView alloc] initWithFrame:CGRectMake(0, 25, frame.size.width, frame.size.height - 25)];
+        //[bgCheckmarkView setBackgroundColor:[UIColor cyanColor]];
+        [self addSubview:bgCheckmarkView];
+        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapCheckMark)];
+        [bgCheckmarkView addGestureRecognizer:tapGesture];
+        
+        self.checkmarkImageView = [[UIButton alloc] initWithFrame:checkmarkFrame];
         [self addSubview:self.checkmarkImageView];
         
         // 多增加对打钩的tap手势响应，springox(20140520)

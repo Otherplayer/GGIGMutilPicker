@@ -456,6 +456,14 @@
 
 - (BOOL)agGridItemCanSelect:(AGIPCGridItem *)gridItem
 {
+    
+    
+#warning 提示
+    if (self.imagePickerController.maximumNumberOfPhotosToBeSelected <= self.selectedAssets.count) {
+        NSLog(@"最我只能选择%ld张照片",self.imagePickerController.maximumNumberOfPhotosToBeSelected);
+    }
+    
+    
     if (self.imagePickerController.selectionMode == AGImagePickerControllerSelectionModeSingle && self.imagePickerController.selectionBehaviorInSingleSelectionMode == AGImagePickerControllerSelectionBehaviorTypeRadio) {
         for (AGIPCGridItem *item in self.assets)
             if (item.selected)
