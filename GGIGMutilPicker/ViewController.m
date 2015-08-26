@@ -48,11 +48,23 @@ static NSString *identifier = @"identifier";
 
 - (IBAction)choosePic:(id)sender {
     
-    [[GGCamera sharedInstance] showCameraResults:^(NSArray *images) {
+//    [[GGCamera sharedInstance] showCameraResults:^(NSArray *images) {
+//        [self.dataSource removeAllObjects];
+//        [self.dataSource addObjectsFromArray:images];
+//        [self.tableView reloadData];
+//    }];
+    
+    [[GGCamera sharedInstance] showCameraWithMaxSelectedNumber:4 results:^(NSArray *images) {
         [self.dataSource removeAllObjects];
         [self.dataSource addObjectsFromArray:images];
         [self.tableView reloadData];
     }];
+    
+//    [[GGCamera sharedInstance] showCameraResult:^(UIImage *image) {
+//        [self.dataSource addObject:image];
+//        [self.tableView reloadData];
+//    }];
+    
 }
 
 

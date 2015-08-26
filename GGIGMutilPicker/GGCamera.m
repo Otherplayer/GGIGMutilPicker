@@ -23,6 +23,7 @@ static const char GGCameraDidFinishPickerImageUrl;
 }
 @property (nonatomic, strong) NSMutableArray *items;
 @property (nonatomic, assign) BOOL isMutableSelected;
+@property (nonatomic, assign) NSInteger maxSelectedNumber;
 
 @end
 
@@ -34,6 +35,7 @@ static const char GGCameraDidFinishPickerImageUrl;
     dispatch_once(&onceToken, ^{
         camera = [[GGCamera alloc] init];
         camera.items = [[NSMutableArray alloc] init];
+        camera.maxSelectedNumber = 6;
     });
     return camera;
 }
@@ -49,6 +51,12 @@ static const char GGCameraDidFinishPickerImageUrl;
 }
 
 - (void)showCameraResults:(void(^)(NSArray *images))resultBlock{
+    [self showCameraSingleSelected:NO];
+    objc_setAssociatedObject(self, &GGCameraDidFinishPickerImage, resultBlock, OBJC_ASSOCIATION_COPY);
+}
+
+- (void)showCameraWithMaxSelectedNumber:(NSInteger)selectedNumber results:(void (^)(NSArray *))resultBlock{
+    self.maxSelectedNumber = selectedNumber;
     [self showCameraSingleSelected:NO];
     objc_setAssociatedObject(self, &GGCameraDidFinishPickerImage, resultBlock, OBJC_ASSOCIATION_COPY);
 }
@@ -266,7 +274,7 @@ static const char GGCameraDidFinishPickerImageUrl;
     // Show saved photos on top
     ipc.shouldShowSavedPhotosOnTop = NO;
     ipc.shouldChangeStatusBarStyle = YES;
-    ipc.maximumNumberOfPhotosToBeSelected = 6;
+    ipc.maximumNumberOfPhotosToBeSelected = self.maxSelectedNumber;
     
     // Custom toolbar items
     //    AGIPCToolbarItem *selectAll = [[AGIPCToolbarItem alloc] initWithBarButtonItem:[[UIBarButtonItem alloc] initWithTitle:@"+ Select All" style:UIBarButtonItemStyleBordered target:nil action:nil] andSelectionBlock:^BOOL(NSUInteger index, ALAsset *asset) {
@@ -287,7 +295,7 @@ static const char GGCameraDidFinishPickerImageUrl;
     [ipc showFirstAssetsController];
     
     //// Show assets list with name, added by springox(20150719)
-    //[ipc showAssetsControllerWithName:@"Camera Roll"];
+    [ipc showAssetsControllerWithName:@"Camera Roll"];
     
     
 }

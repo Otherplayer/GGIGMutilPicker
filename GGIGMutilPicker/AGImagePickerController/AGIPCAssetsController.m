@@ -460,7 +460,7 @@
     
 #warning 提示
     if (self.imagePickerController.maximumNumberOfPhotosToBeSelected <= self.selectedAssets.count) {
-        NSLog(@"最我只能选择%ld张照片",self.imagePickerController.maximumNumberOfPhotosToBeSelected);
+        NSLog(@"最多只能选择%ld张照片",self.imagePickerController.maximumNumberOfPhotosToBeSelected);
     }
     
     

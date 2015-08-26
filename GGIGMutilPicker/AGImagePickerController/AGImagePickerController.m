@@ -110,9 +110,9 @@ static AGImagePickerController *_sharedInstance = nil;
         
         if (_shouldChangeStatusBarStyle)
             if (IS_IPAD())
-                [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:YES];
+                [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
             else
-                [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent animated:YES];
+                [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
         else
             [[UIApplication sharedApplication] setStatusBarStyle:_oldStatusBarStyle animated:YES];
     }

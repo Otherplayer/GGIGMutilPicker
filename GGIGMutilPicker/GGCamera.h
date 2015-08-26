@@ -13,7 +13,9 @@
 
 - (void)showCameraResult:(void(^)(UIImage *image))resultBlock; /*  */
 - (void)showCameraResults:(void(^)(NSArray *images))resultBlock; /*  */
+- (void)showCameraWithMaxSelectedNumber:(NSInteger)selectedNumber results:(void (^)(NSArray *))resultBlock;
 - (void)showCameraResultWithUrl:(void (^)(NSString *imageurl))resultBlock;
+
 
 - (void)saveImageToAlbum:(UIImage *)image;
 
